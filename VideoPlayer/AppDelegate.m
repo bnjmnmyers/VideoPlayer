@@ -17,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
+	
+	CGColorRef orangeColor = [[UIColor orangeColor] CGColor];
+	[[UINavigationBar appearance] setTintColor:[UIColor colorWithCGColor:orangeColor]];
+	//[[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navBackground.png"] forBarMetrics:UIBarMetricsDefault];
 	return YES;
 }
 

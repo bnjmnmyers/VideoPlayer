@@ -15,6 +15,9 @@
 		B56B23EE19DEF1B00039BF79 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56B23ED19DEF1B00039BF79 /* Images.xcassets */; };
 		B56B23F119DEF1B00039BF79 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56B23EF19DEF1B00039BF79 /* LaunchScreen.xib */; };
 		B56B23FD19DEF1B00039BF79 /* VideoPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B56B23FC19DEF1B00039BF79 /* VideoPlayerTests.m */; };
+		B56B240819DEF1C00039BF79 /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56B240719DEF1C00039BF79 /* VideoPlayerViewController.m */; };
+		B56B240A19DEF3410039BF79 /* MainCBTNuggets-Logo-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = B56B240919DEF3410039BF79 /* MainCBTNuggets-Logo-copy.png */; };
+		B56B240C19DEF64D0039BF79 /* videoThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = B56B240B19DEF64D0039BF79 /* videoThumb.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,10 @@
 		B56B23F619DEF1B00039BF79 /* VideoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56B23FB19DEF1B00039BF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B56B23FC19DEF1B00039BF79 /* VideoPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerTests.m; sourceTree = "<group>"; };
+		B56B240619DEF1C00039BF79 /* VideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerViewController.h; sourceTree = "<group>"; };
+		B56B240719DEF1C00039BF79 /* VideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
+		B56B240919DEF3410039BF79 /* MainCBTNuggets-Logo-copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainCBTNuggets-Logo-copy.png"; sourceTree = "<group>"; };
+		B56B240B19DEF64D0039BF79 /* videoThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoThumb.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +90,8 @@
 		B56B23DC19DEF1B00039BF79 /* VideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				B56B240619DEF1C00039BF79 /* VideoPlayerViewController.h */,
+				B56B240719DEF1C00039BF79 /* VideoPlayerViewController.m */,
 				B56B23E119DEF1B00039BF79 /* AppDelegate.h */,
 				B56B23E219DEF1B00039BF79 /* AppDelegate.m */,
 				B56B23E719DEF1B00039BF79 /* ViewController.h */,
@@ -99,6 +108,8 @@
 		B56B23DD19DEF1B00039BF79 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B56B240B19DEF64D0039BF79 /* videoThumb.png */,
+				B56B240919DEF3410039BF79 /* MainCBTNuggets-Logo-copy.png */,
 				B56B23DE19DEF1B00039BF79 /* Info.plist */,
 				B56B23DF19DEF1B00039BF79 /* main.m */,
 			);
@@ -202,6 +213,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56B240A19DEF3410039BF79 /* MainCBTNuggets-Logo-copy.png in Resources */,
+				B56B240C19DEF64D0039BF79 /* videoThumb.png in Resources */,
 				B56B23EC19DEF1B00039BF79 /* Main.storyboard in Resources */,
 				B56B23F119DEF1B00039BF79 /* LaunchScreen.xib in Resources */,
 				B56B23EE19DEF1B00039BF79 /* Images.xcassets in Resources */,
@@ -222,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56B240819DEF1C00039BF79 /* VideoPlayerViewController.m in Sources */,
 				B56B23E319DEF1B00039BF79 /* AppDelegate.m in Sources */,
 				B56B23E619DEF1B00039BF79 /* VideoPlayer.xcdatamodeld in Sources */,
 				B56B23E919DEF1B00039BF79 /* ViewController.m in Sources */,
