@@ -43,6 +43,35 @@
 	[_moviePlayer play];
 }
 
+- (IBAction)downloadToDevice:(id)sender {
+	_downloadAlert = [[UIAlertView alloc] initWithTitle:@"Video Download" message:@"Would you like to proceed with downloading this video to your device?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Okay", nil];
+	[_downloadAlert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+	if (buttonIndex == 1) {
+		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+			NSLog(@"Downloading Started");
+			NSString *urlToDownload = @"http://www.benjaminmyers.com/LeviticalTeam/downloads/videos/MicroNugget%20Building%20a%20Great%20IT%20Resume%20(HD).m4v";
+			NSURL *url = [NSURL URLWithString:urlToDownload];
+			NSData *urlData = [NSData dataWithContentsOfURL:url];
+			if ( urlData )
+			{
+				NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+				NSString *documentsDirectory = [paths objectAtIndex:0];
+							
+				NSString *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory,@"resume.m4v"];
+							
+				//saving is done on main thread
+				dispatch_async(dispatch_get_main_queue(), ^{
+					[urlData writeToFile:filePath atomically:YES];
+					NSLog(@"File Saved !");
+				});
+			}
+		});
+	}
+}
+
 - (void)moviePlayBackDidFinish:(NSNotification*)notification {
 	MPMoviePlayerController *player = [notification object];
 	[[NSNotificationCenter defaultCenter]

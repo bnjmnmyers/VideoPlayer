@@ -136,6 +136,15 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTJ-BP-Eps">
+                                        <rect key="frame" x="366" y="96" width="33" height="33"/>
+                                        <state key="normal" image="download.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="downloadToDevice:" destination="KnC-81-n7b" eventType="touchUpInside" id="WAF-Ww-Abw"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -184,6 +193,7 @@
     </scenes>
     <resources>
         <image name="MainCBTNuggets-Logo-copy.png" width="2800" height="1130"/>
+        <image name="download.png" width="100" height="100"/>
         <image name="videoThumb.png" width="288" height="180"/>
     </resources>
 </document>

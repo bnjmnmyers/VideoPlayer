@@ -18,6 +18,7 @@
 		B56B240819DEF1C00039BF79 /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56B240719DEF1C00039BF79 /* VideoPlayerViewController.m */; };
 		B56B240A19DEF3410039BF79 /* MainCBTNuggets-Logo-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = B56B240919DEF3410039BF79 /* MainCBTNuggets-Logo-copy.png */; };
 		B56B240C19DEF64D0039BF79 /* videoThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = B56B240B19DEF64D0039BF79 /* videoThumb.png */; };
+		B56B240E19DF18D00039BF79 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = B56B240D19DF18D00039BF79 /* download.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B56B240719DEF1C00039BF79 /* VideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
 		B56B240919DEF3410039BF79 /* MainCBTNuggets-Logo-copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainCBTNuggets-Logo-copy.png"; sourceTree = "<group>"; };
 		B56B240B19DEF64D0039BF79 /* videoThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoThumb.png; sourceTree = "<group>"; };
+		B56B240D19DF18D00039BF79 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		B56B23DD19DEF1B00039BF79 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B56B240D19DF18D00039BF79 /* download.png */,
 				B56B240B19DEF64D0039BF79 /* videoThumb.png */,
 				B56B240919DEF3410039BF79 /* MainCBTNuggets-Logo-copy.png */,
 				B56B23DE19DEF1B00039BF79 /* Info.plist */,
@@ -218,6 +221,7 @@
 				B56B23EC19DEF1B00039BF79 /* Main.storyboard in Resources */,
 				B56B23F119DEF1B00039BF79 /* LaunchScreen.xib in Resources */,
 				B56B23EE19DEF1B00039BF79 /* Images.xcassets in Resources */,
+				B56B240E19DF18D00039BF79 /* download.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +434,7 @@
 				B56B240219DEF1B00039BF79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B56B240319DEF1B00039BF79 /* Build configuration list for PBXNativeTarget "VideoPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +443,7 @@
 				B56B240519DEF1B00039BF79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
